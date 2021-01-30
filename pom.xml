@@ -47,24 +47,14 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.1.2</version>
-                <configuration>
-                    <artifactItems>
-                        <artifactItem>
-                            <groupId>[ groupId ]</groupId>
-                            <artifactId>[ artifactId ]</artifactId>
-                            <version>[ version ]</version>
-                            <type>[ packaging ]</type>
-                            <classifier> [classifier - optional] </classifier>
-                            <overWrite>[ true or false ]</overWrite>
-                            <outputDirectory>[ output directory ]</outputDirectory>
-                            <destFileName>[ filename ]</destFileName>
-                        </artifactItem>
-                    </artifactItems>
-                    <!-- other configurations here -->
-                </configuration>
+                <groupId>org.example</groupId>
+                <artifactId>TranslatorPlugIn</artifactId>
+                <version>3.3.3</version>
+                <goals>
+                    <goal>populate
+                    </goal>
+                </goals>
+
             </plugin>
         </plugins>
     </build>

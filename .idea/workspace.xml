@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98e6ad86-e3de-4834-878c-49d82b021cb7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/translator/TranslatorManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translator/TranslatorManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Launcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/translator/HumanMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/HumanMsg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/translator/KlingonMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/KlingonMsg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/translator/LangTranslator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/LangTranslator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/translator/TranslatorManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/TranslatorManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/translator/TranslatorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/TranslatorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/translator/TranslatorTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/TranslatorTemplate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/translator/interfaces/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/interfaces/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/translator/interfaces/TranslatorTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/interfaces/TranslatorTool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utranslator.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="98e6ad86-e3de-4834-878c-49d82b021cb7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
