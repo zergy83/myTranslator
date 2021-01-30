@@ -1,9 +1,0 @@
-translator\HumanMsg.class
-Launcher.class
-translator\interfaces\Message.class
-translator\TranslatorTemplate.class
-translator\interfaces\TranslatorTool.class
-translator\LangTranslator.class
-translator\KlingonMsg.class
-translator\TranslatorManager.class
-translator\TranslatorService.class

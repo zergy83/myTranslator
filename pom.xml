@@ -24,6 +24,7 @@
     </description>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <revision>${utranslator.version}</revision>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
@@ -63,6 +64,10 @@
                 <version>3.3.3</version>
                 <executions>
                     <execution>
+                        <configuration>
+                            <targetDir>${project.build.directory}</targetDir>
+                            <baseDir>${project.build.sourceDirectory}</baseDir>
+                        </configuration>
                         <goals>
                             <goal>populate
                             </goal>
