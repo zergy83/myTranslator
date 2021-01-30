@@ -12,6 +12,9 @@ import java.util.List;
 public class TranslatorServiceTest {
 
 
+    /**
+     * Test that Service can correctly return the correct type of message from a KlingonMsg
+     */
     @Test
     public void TranslatorService2ServiceTest(){
         //Data fixture
@@ -33,6 +36,9 @@ public class TranslatorServiceTest {
         assert receivedMessage.getOrigin().contains("HumanMsg");
     }
 
+    /**
+     * Test that Service can correctly return the correct type of message from a HumanMsg
+     */
     @Test
     public void TranslatorService2Test(){
         //Data fixture

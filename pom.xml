@@ -27,9 +27,20 @@
         <revision>${utranslator.version}</revision>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <slf4j.version>1.7.3</slf4j.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>TranslatorPlugIn</artifactId>
+            <version>3.3.3</version>
+        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -50,10 +61,14 @@
                 <groupId>org.example</groupId>
                 <artifactId>TranslatorPlugIn</artifactId>
                 <version>3.3.3</version>
-                <goals>
-                    <goal>populate
-                    </goal>
-                </goals>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>populate
+                            </goal>
+                        </goals>
+                    </execution>
+                </executions>
 
             </plugin>
         </plugins>
