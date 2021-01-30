@@ -30,11 +30,20 @@ public enum TranslatorManager {
         LangTranslator langTranslatorToReturn = null;
 
         for (LangTranslator langTranslator : translators){
-            if (message.getOrigin().contains("KlingonMsg") && (message.getContent().equals(langTranslator.getKlingonMsgContent()))){
+//            if (message.getOrigin().contains("KlingonMsg") && (message.getContent().equals(langTranslator.getKlingonMsgContent()))){
+//                langTranslatorToReturn = langTranslator;
+//            } else if (message.getOrigin().contains("HumanMsg") && (message.getContent().equals(langTranslator.getHumanMsgContent()))){
+//                langTranslatorToReturn = langTranslator;
+//            }
+
+            //other version based on instance of (polymorphism)
+            if ((message instanceof KlingonMsg) && (message.getContent().equals(langTranslator.getKlingonMsgContent()))){
                 langTranslatorToReturn = langTranslator;
-            } else if (message.getOrigin().contains("HumanMsg") && (message.getContent().equals(langTranslator.getHumanMsgContent()))){
+            } else if ((message instanceof HumanMsg) && (message.getContent().equals(langTranslator.getHumanMsgContent()))){
                 langTranslatorToReturn = langTranslator;
             }
+
+
         }
         return langTranslatorToReturn;
     }

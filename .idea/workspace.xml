@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98e6ad86-e3de-4834-878c-49d82b021cb7" name="Default Changelist" comment="" />
+    <list default="true" id="98e6ad86-e3de-4834-878c-49d82b021cb7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/translator/TranslatorManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translator/TranslatorManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Launcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/translator/HumanMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/HumanMsg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/translator/KlingonMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/KlingonMsg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/translator/LangTranslator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/LangTranslator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/translator/TranslatorManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/TranslatorManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/translator/TranslatorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/TranslatorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/translator/TranslatorTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/TranslatorTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/translator/interfaces/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/interfaces/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/translator/interfaces/TranslatorTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translator/interfaces/TranslatorTool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utranslator.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +44,13 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="15" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1nmdPbj7WaC2akdAYByIH5GiHVr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -40,10 +61,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TranslatorPlugIn/TranslatorPlugin/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -53,7 +75,7 @@
       <recent name="translator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TranslatorServiceTest">
+  <component name="RunManager" selected="Application.Launcher">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Launcher" />
       <module name="utranslator" />
@@ -94,9 +116,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Launcher" />
         <item itemvalue="JUnit.TranslatorServiceTest" />
         <item itemvalue="JUnit.TranslatorServiceTest.ServiceTest" />
-        <item itemvalue="Application.Launcher" />
       </list>
     </recent_temporary>
   </component>
@@ -121,15 +143,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/translator/TranslatorManager.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/translator/TranslatorManager.java</url>
           <line>31</line>
@@ -144,7 +162,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/utranslator$TranslatorServiceTest.ic" NAME="TranslatorServiceTest Coverage Results" MODIFIED="1612015570400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/utranslator$TranslatorServiceTest.ic" NAME="TranslatorServiceTest Coverage Results" MODIFIED="1612016314082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>translator.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/utranslator$TranslatorServiceTest_ServiceTest.ic" NAME="TranslatorServiceTest.ServiceTest Coverage Results" MODIFIED="1612015434834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
