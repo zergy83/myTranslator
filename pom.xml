@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.example</groupId>
+        <groupId>zergy.com</groupId>
         <artifactId>Mother</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
 
-    <groupId>org.example</groupId>
+    <groupId>zergy.com</groupId>
     <artifactId>utranslator</artifactId>
     <version>${revision}</version>
 
@@ -19,49 +19,80 @@
     <description> translator to test stuff
     1/ main project to dev Tu
     2/ another project as plug in to manage keyFiles
-    3/ a parent project for versionning management
-
     </description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <revision>${utranslator.version}</revision>
+        <zergy.com.TranslatorPlugIn.version>${TranslatorPlugIn.version}</zergy.com.TranslatorPlugIn.version>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <slf4j.version>1.7.3</slf4j.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${slf4j.version}</version>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
         </dependency>
         <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>TranslatorPlugIn</artifactId>
-            <version>3.3.3</version>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.5</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.1.0</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-runner</artifactId>
-            <version>1.4.2</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.11.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.11.1</version>
         </dependency>
     </dependencies>
 
     <build>
         <plugins>
+        <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>translator.Launcher</mainClass>
+                    </manifest>
+                </archive>
+                <descriptorRefs>
+                    <descriptorRef>jar-with-dependencies</descriptorRef>
+                </descriptorRefs>
+            </configuration>
+        </plugin>
             <plugin>
-                <groupId>org.example</groupId>
+                <groupId>zergy.com</groupId>
                 <artifactId>TranslatorPlugIn</artifactId>
-                <version>3.3.3</version>
+                <version>${zergy.com.TranslatorPlugIn.version}</version>
                 <executions>
                     <execution>
                         <configuration>
@@ -74,7 +105,6 @@
                         </goals>
                     </execution>
                 </executions>
-
             </plugin>
         </plugins>
     </build>

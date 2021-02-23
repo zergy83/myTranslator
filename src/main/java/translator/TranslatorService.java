@@ -1,49 +1,60 @@
 package translator;
 
+import java.util.Set;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import translator.interfaces.Message;
 
 /**
- * Service that user TranslatorManager to store translators
+ * Service that process input generic message with User defined translators, stored in TranslatorManager
  */
 public class TranslatorService {
+    private static final Logger LOGGER = LoggerFactory.getLogger(TranslatorService.class);
 
+    /** Manager that aggregates LangTranslator*/
     TranslatorManager translatorManager;
 
-
+    /**
+     * Constructor that References singleton instance of TranslatorManger to field
+     */
     public TranslatorService() {
         this.translatorManager = TranslatorManager.Instance;
     }
 
+    /**
+     * Process a GenericMessage, find adequate translator if available and use it to send a populated generic Message back
+     * @param msgToProcess Any inherited Message Interface objet
+     * @return a Message
+     */
     public Message processMessage(Message msgToProcess) {
 
-        Message messageToReturn = null;
+        GenericMsg genericMsgToReturn = null;
 
-        if (msgToProcess instanceof KlingonMsg) {
-            messageToReturn = (Message) processKMessage((KlingonMsg) msgToProcess);
-        } else if(msgToProcess instanceof HumanMsg){
-            messageToReturn = (Message) processHMsg((HumanMsg) msgToProcess);
-        }
+        Set<LangTranslator> langTranslatorToUse = translatorManager.getTranslators();
+        if (!langTranslatorToUse.isEmpty()){
 
-        return messageToReturn;
-    }
+            for (LangTranslator langTranslator : langTranslatorToUse) {
+                // define lang destination from current translator, emit msg
+                String targetLang = null;
+                String targetContent = null;
+                targetLang = langTranslator.getLang1().equals(msgToProcess.getLang()) ? langTranslator.getLang2() :
+                langTranslator.getLang2().equals(msgToProcess.getLang())? langTranslator.getLang1(): null;
 
-    private Object processKMessage(KlingonMsg msg){
-        HumanMsg humanMsgToReturn = null;
+                if (targetLang != null) {
+                    targetContent = langTranslator.getLang1Content().equals(msgToProcess.getContent()) ? langTranslator.getLang2Content() :
+                            langTranslator.getLang2Content().equals(msgToProcess.getContent()) ? langTranslator.getLang1Content() : null;
+                }
 
-
-        LangTranslator langTranslatorToUse = translatorManager.findBestTranslator(msg);
-        if (langTranslatorToUse != null){
-            humanMsgToReturn = langTranslatorToUse.toHuman(msg);
+                if (targetContent != null) {
+                    LOGGER.debug("Translator with ID {} was used", langTranslator.getTranslatorID());
+                    genericMsgToReturn = new GenericMsg(targetLang, targetContent);
+                }
+            }
         } else{
-            System.out.println("ERROR");
+            LOGGER.warn("ERROR");
         }
-
-        return humanMsgToReturn;
-    }
-
-    private Object processHMsg(HumanMsg msg){
-        LangTranslator langTranslatorToUse = translatorManager.findBestTranslator(msg);
-        KlingonMsg klingonMsgToReturn= langTranslatorToUse.toKlingon(msg);
-        return klingonMsgToReturn;
+        return genericMsgToReturn;
     }
 }

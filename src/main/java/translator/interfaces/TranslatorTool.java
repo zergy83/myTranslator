@@ -1,13 +1,8 @@
 package translator.interfaces;
 
-import translator.HumanMsg;
-import translator.KlingonMsg;
-
 public interface TranslatorTool {
 
+    Message toLang1(Message message);
 
-    HumanMsg toHuman(KlingonMsg klingonMsg);
-
-    KlingonMsg toKlingon(HumanMsg message);
-
+    Message toLang2(Message message);
 }

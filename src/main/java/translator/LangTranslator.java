@@ -1,44 +1,45 @@
 package translator;
 
-import translator.interfaces.TranslatorTool;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * human/klingon translator
+ * A two languages generic translator with associated content
  */
-public class LangTranslator extends TranslatorTemplate implements TranslatorTool {
+public class LangTranslator extends TranslatorTemplate {
 
-    private String klingonMsgContent;
-    private String humanMsgContent;
+    // Lang Duo User defined
+    private String lang1;
+    private String lang2;
 
+    private String lang1Content;
+    private String lang2Content;
 
-    public LangTranslator() {
+    @JsonCreator
+    public LangTranslator(
+            @JsonProperty("lang1") String lang1,
+            @JsonProperty("lang2") String lang1Content,
+            @JsonProperty("lang1Content") String lang2,
+            @JsonProperty("lang2Content") String lang2Content) {
+        this.lang1 = lang1;
+        this.lang1Content = lang1Content;
+        this.lang2 = lang2;
+        this.lang2Content = lang2Content;
     }
 
-    @Override
-    public HumanMsg toHuman(KlingonMsg klingonMsg) {
-        HumanMsg humanMsg = new HumanMsg(this.humanMsgContent);
-        return humanMsg;
+    public String getLang1() {
+        return lang1;
     }
 
-    @Override
-    public KlingonMsg toKlingon(HumanMsg message) {
-        KlingonMsg klingonMsg = new KlingonMsg(this.klingonMsgContent);
-        return klingonMsg;
+    public String getLang2() {
+        return lang2;
     }
 
-    public String getKlingonMsgContent() {
-        return klingonMsgContent;
+    public String getLang1Content() {
+        return lang1Content;
     }
 
-    public void setKlingonMsgContent(String klingonMsgContent) {
-        this.klingonMsgContent = klingonMsgContent;
-    }
-
-    public String getHumanMsgContent() {
-        return humanMsgContent;
-    }
-
-    public void setHumanMsgContent(String humanMsgContent) {
-        this.humanMsgContent = humanMsgContent;
+    public String getLang2Content() {
+        return lang2Content;
     }
 }

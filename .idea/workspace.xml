@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98e6ad86-e3de-4834-878c-49d82b021cb7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Launcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/batchKeyFile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/translator/HumanMsg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/translator/KlingonMsg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/translator/LangTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translator/LangTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/translator/TranslatorManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translator/TranslatorManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/translator/TranslatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translator/TranslatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/translator/TranslatorTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translator/TranslatorTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/translator/interfaces/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translator/interfaces/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/translator/interfaces/TranslatorTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translator/interfaces/TranslatorTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/translator/TranslatorServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/translator/TranslatorServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-translator.TranslatorServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-translator.TranslatorServiceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/translator.TranslatorServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/translator.TranslatorServiceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/utranslator-1.2.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/utranslator-1.2.3.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +62,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TranslatorPlugIn/TranslatorPlugin/pom.xml" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
@@ -104,6 +111,53 @@
       <option name="MAIN_CLASS_NAME" value="translator.TranslatorServiceTest" />
       <option name="METHOD_NAME" value="ServiceTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,10 +210,10 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/utranslator$TranslatorServiceTest.ic" NAME="TranslatorServiceTest Coverage Results" MODIFIED="1612016314082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/utranslator$TranslatorServiceTest_ServiceTest.ic" NAME="TranslatorServiceTest.ServiceTest Coverage Results" MODIFIED="1612015434834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>translator.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/utranslator$TranslatorServiceTest_ServiceTest.ic" NAME="TranslatorServiceTest.ServiceTest Coverage Results" MODIFIED="1612015434834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/utranslator$TranslatorServiceTest.ic" NAME="TranslatorServiceTest Coverage Results" MODIFIED="1612016314082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>translator.*</FILTER>
     </SUITE>
   </component>
